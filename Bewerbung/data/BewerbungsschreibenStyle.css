@@ -1,0 +1,81 @@
+body {
+    --my-text-size: 14pt;
+}
+
+.mainDiv {
+    margin-left: 12%;
+    background-color: darkblue;
+    height: 100%;
+    width: 88%;
+    position: fixed;
+}
+
+.dinA4 {
+    margin-left: 24%;
+    background-color: white;
+    width: 37%;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.dinA4 {
+    --my-padding: 16px;
+}
+
+.headText {
+    text-align: left;
+    font-size: var(--my-text-size);
+    padding: var(--my-padding) var(--my-padding) var(--my-padding) var(--my-padding);
+}
+
+.datum {
+    font-size: var(--my-text-size);
+    text-align: right;
+    font-weight: bold;
+    padding: var(--my-padding) var(--my-padding) var(--my-padding) var(--my-padding);
+}
+
+.headLine {
+    font-size: 18pt;
+    text-align: center;
+    font-weight: bold;
+}
+
+.theText {
+    font-size: var(--my-text-size);
+    text-align: justify;
+    padding: var(--my-padding) var(--my-padding) var(--my-padding) var(--my-padding);
+}
+
+img {
+    height: 50px;
+    width: 150px;
+}
+
+@media screen and (max-width: 1680px) {
+    .mainDiv {
+        height: 0;
+        width: 0;
+    }
+
+    .dinA4 {
+        padding-left: 10%;
+        padding-right: 20%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .mainDiv {
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+    .dinA4 {
+        --my-margin: 40%;
+        margin: var(--my-margin) 0 0 0;
+        width: 100%;
+        padding-left: 0;
+        overflow: scroll;
+    }
+}

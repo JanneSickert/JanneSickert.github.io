@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <title>Zeugnisse</title>
+        <meta name="author" content="Janne Sickert">
+        <meta name="editor" content="IntelliJ IDEA">
+        <link rel="stylesheet" type="text/css" href="ZeugnisseStyle.css">
+        <link rel="stylesheet" type="text/css" href="Navigation.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <ul>
+            <li><a href="Startseite.html">Startseite</a></li>
+            <li><a href="Bewerbungsschreiben.html">Bewerbungsschreiben</a></li>
+            <li><a href="Lebenslauf.html">Lebenslauf</a></li>
+            <li><a class="current" href="Zeugnisse.html">Zeugnisse</a></li>
+            <li><a href="https://github.com/JanneSickert?tab=repositories">Mein GitHub</a></li>
+        </ul>
+        <div id="ZeugnisseMainDiv">
+            <button id="abiButton" onclick="cabi()">Abi Zeugnis</button>
+            <button id="j1Button" onclick="cj1()">Zeugnis J1-2</button>
+            <button id="j2Button" onclick="cj2()">Zeugnis J2-1</button>
+            <script>
+                function write(text) {
+                    document.write(text);
+                }
+                function ssf(id, text) {
+                    localStorage.setItem(id, text)
+                }
+                function gsf(id) {
+                    return (localStorage.getItem(id))
+                }
+                main(write, ssf, gsf)
+            </script>
+        </div>
+    </body>
+</html>
