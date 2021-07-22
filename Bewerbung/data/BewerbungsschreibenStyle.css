@@ -51,6 +51,7 @@ body {
 img {
     height: 50px;
     width: 150px;
+	padding: var(--my-padding) var(--my-padding) var(--my-padding) var(--my-padding);
 }
 
 @media screen and (max-width: 1680px) {
