@@ -4,7 +4,7 @@ body {
 
 .startContent {
     background-color: rgba(0, 0, 255, 0.3);
-	margin-left: 12%;
+	width: 100%;
 }
 
 #headText, #bodyText {
