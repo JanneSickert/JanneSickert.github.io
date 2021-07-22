@@ -56,13 +56,45 @@ button {
         margin-left: 5%;
     }
 
-    #abiButton, #j1Button, #bildZeugnis {
+    #bildZeugnis {
         margin-left: 20px;
     }
+	
+	#abiButton, #j1Button {
+		margin-left: 2%;
+	}
+	
+	#abiButton, #j1Button, #j2Button {
+		height: 35px;
+	}
+	
+	#j1Button, #j2Button {
+		margin-top: 70px;
+	}
 
     #j2Button {
-        margin-left: 26%;
+        margin-left: 27%;
     }
+}
+
+@media screen and (max-width: 1450px) {
+	#abiButton, #j1Button {
+		margin-left: 10%;
+	}
+	
+    #j2Button {
+        margin-left: 36%;
+    }
+}
+
+@media screen and (max-width: 1225px) {
+	#j1Button, #j2Button {
+		margin-top: 50px;
+	}
+	
+	#j2Button {
+		margin-left: 35%;
+	}
 }
 
 @media screen and (max-width: 770px) {
