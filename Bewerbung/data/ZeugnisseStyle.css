@@ -118,12 +118,12 @@ button {
     }
 
     #abiButton {
-        margin-top: -12%;
+        margin-top: 0;
         width: 98%;
     }
 	
 	#j1Button, #j2Button, #j3Button {
-		margin-top: 0;
+		margin-top: 10%;
         width: 32%;
 	}
 
@@ -133,5 +133,9 @@ button {
 	
 	#j3Button {
 		margin-left: 66%;
+	}
+	
+	#bildZeugnis {
+		margin-top: 25%;
 	}
 }

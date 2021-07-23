@@ -1,0 +1,29 @@
+#mainDivLehrinhalte {
+    --monitor: 12%;/* Abstand zur Navigationsleiste bei verschiedenden Layouts. */
+    --tablet: 25%;
+    --handy-height: 40%;
+    margin-left: var(--monitor);
+}
+
+#headLineLehrinhalte {
+    color: darkblue;
+    font-size: 75pt;
+    padding-left: 40%;
+}
+
+@media screen and (max-width: 1680px) {
+    #mainDivLehrinhalte {
+        margin-left: var(--tablet);
+    }
+
+    #headLineLehrinhalte {
+        padding-left: 5%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    #mainDivLehrinhalte {
+        padding-top: var(--handy-height);
+        margin-left: 0;
+    }
+}
