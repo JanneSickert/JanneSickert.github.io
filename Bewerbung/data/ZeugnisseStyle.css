@@ -53,6 +53,10 @@ button {
 }
 
 @media screen and (max-width: 1680px) {
+	button {
+		font-size: 15pt;
+	}
+	
     #ZeugnisseMainDiv {
         margin-left: 25%;
     }

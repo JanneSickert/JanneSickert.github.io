@@ -13,12 +13,19 @@
 
 @media screen and (max-width: 1680px) {
     #mainDivLehrinhalte {
-        margin-left: var(--tablet);
+        margin-left: 0;
     }
 
     #headLineLehrinhalte {
         padding-left: 5%;
+		position: absolute;
+		margin-left: var(--tablet);
     }
+	
+	img {
+		margin-left: var(--tablet);
+		margin-top: 100px;
+	}
 }
 
 @media screen and (max-width: 770px) {
@@ -26,4 +33,14 @@
         padding-top: var(--handy-height);
         margin-left: 0;
     }
+	
+	img {
+		margin-left: 0;
+		margin-top: 150px;
+	}
+	
+	#headLineLehrinhalte {
+		margin-left: 0;
+		margin-top: 50px;
+	}
 }
