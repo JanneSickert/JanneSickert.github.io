@@ -1,8 +1,8 @@
 const URLS = {
-    abi: "Abi.bmp",
-    j1: "J1-2.bmp",
-    j2: "J2-1.bmp",
-	j3: "J2-2.bmp"
+    abi: "AbiZeugnis.jpg",
+    j1: "Janne_Sickert_Zeugnis_J1-2.jpg",
+    j2: "Janne_Sickert_Zeugnis_J2-1.jpg",
+	j3: "Janne_Sickert_Zeugnis_J2-2.jpg"
 }
 
 var aWriteFunction = null;

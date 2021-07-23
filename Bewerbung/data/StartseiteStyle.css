@@ -31,6 +31,7 @@ body {
 @media screen and (max-width: 1680px) {
     #headText, #bodyText {
         padding-left: 26%;
+		padding-top: 10%;
     }
 }
 
