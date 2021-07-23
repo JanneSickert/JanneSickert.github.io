@@ -3,6 +3,7 @@ body {
     --my-button-margin: 22%;
     --my-button-height: 50px;
     --my-margin-top: 85px;
+	--my-small-button-width: 16%;/* Mit jeweils 1% Abstand zwischen den Button */
 }
 
 #ZeugnisseMainDiv {
@@ -29,16 +30,21 @@ button {
     width: 50%;
 }
 
-#j1Button {
-    margin-left: var(--my-button-margin);
-    width: 25%;
+#j1Button, #j2Button, #j3Button {
+	width: var(--my-small-button-width);
     margin-top: var(--my-margin-top);
 }
 
+#j1Button {
+    margin-left: var(--my-button-margin);
+}
+
 #j2Button {
-    margin-left: 47%;
-    width: 25%;
-    margin-top: var(--my-margin-top);
+    margin-left: 39%;
+}
+
+#j3Button {
+	margin-left: 56%;
 }
 
 #bildZeugnis {
@@ -64,17 +70,21 @@ button {
 		margin-left: 2%;
 	}
 	
-	#abiButton, #j1Button, #j2Button {
+	#abiButton, #j1Button, #j2Button, #j3Button {
 		height: 35px;
 	}
 	
-	#j1Button, #j2Button {
+	#j1Button, #j2Button, #j3Button {
 		margin-top: 70px;
 	}
 
     #j2Button {
-        margin-left: 27%;
+        margin-left: 19%;
     }
+	
+	#j3Button {
+		margin-left: 36%;
+	}
 }
 
 @media screen and (max-width: 1450px) {
@@ -83,17 +93,17 @@ button {
 	}
 	
     #j2Button {
-        margin-left: 36%;
+        margin-left: 27%;
     }
+	
+	#j3Button {
+		margin-left: 44%;
+	}
 }
 
 @media screen and (max-width: 1225px) {
-	#j1Button, #j2Button {
+	#j1Button, #j2Button, #j3Button {
 		margin-top: 50px;
-	}
-	
-	#j2Button {
-		margin-left: 35%;
 	}
 }
 
@@ -111,15 +121,17 @@ button {
         margin-top: -12%;
         width: 98%;
     }
-
-    #j1Button {
-        margin-top: 0;
-        width: 48%;
-    }
+	
+	#j1Button, #j2Button, #j3Button {
+		margin-top: 0;
+        width: 32%;
+	}
 
     #j2Button {
-        margin-left: 49%;
-        margin-top: 0;
-        width: 48%;
+        margin-left: 33%;
     }
+	
+	#j3Button {
+		margin-left: 66%;
+	}
 }

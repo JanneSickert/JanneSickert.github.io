@@ -1,7 +1,8 @@
 const URLS = {
     abi: "Abi.bmp",
     j1: "J1-2.bmp",
-    j2: "J2-1.bmp"
+    j2: "J2-1.bmp",
+	j3: "J2-2.bmp"
 }
 
 var aWriteFunction = null;
@@ -33,6 +34,11 @@ function cj2() {
     reload()
 }
 
+function cj3() {
+	setFunction(STORAGE_ID, "j3")
+    reload()
+}
+
 function abi() {
     aWriteFunction(makeCommand(URLS.abi))
 }
@@ -45,6 +51,10 @@ function j2() {
     aWriteFunction(makeCommand(URLS.j2))
 }
 
+function j3() {
+	aWriteFunction(makeCommand(URLS.j3))
+}
+
 function main(writeFunction, sf, gf) {
     aWriteFunction = writeFunction;
     setFunction = sf
@@ -54,6 +64,8 @@ function main(writeFunction, sf, gf) {
         j1()
     } else if (value === "j2") {
         j2()
+	} else if (value === "j3") {
+		j3()
     } else {
         abi();
     }
