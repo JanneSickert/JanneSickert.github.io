@@ -1,8 +1,9 @@
+const ROOT = "../../pics/"
 const URLS = {
-    abi: "AbiZeugnis.jpg",
-    j1: "Janne_Sickert_Zeugnis_J1-2.jpg",
-    j2: "Janne_Sickert_Zeugnis_J2-1.jpg",
-	j3: "Janne_Sickert_Zeugnis_J2-2.jpg"
+    abi: ROOT + "AbiZeugnis.jpg",
+    j1: ROOT + "Janne_Sickert_Zeugnis_J1-2.jpg",
+    j2: ROOT + "Janne_Sickert_Zeugnis_J2-1.jpg",
+	j3: ROOT + "Janne_Sickert_Zeugnis_J2-2.jpg"
 }
 
 var aWriteFunction = null;

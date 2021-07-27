@@ -75,8 +75,8 @@ img {
     .dinA4 {
         --my-margin: 40%;
         margin: var(--my-margin) 0 0 0;
-        width: 100%;
         padding-left: 0;
-        overflow: scroll;
+		overflow: scroll;
+		width: 100%;
     }
 }
