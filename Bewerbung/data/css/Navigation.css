@@ -30,6 +30,45 @@ li a:hover {
     background-color: darkgray;
 }
 
+.sprache {
+	position: absolute;
+	width: 100%;
+	color: black;
+	background-color: gray;
+	margin-top: 50%;
+	--sprache-margin: 4%;
+}
+
+.spracheHeadline, .deutsch, .english {
+	position: relative;
+	margin-left: var(--sprache-margin);
+	margin-right: var(--sprache-margin);
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 20pt;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	text-decoration: underline;
+}
+
+.deutsch, .english {
+	color: black;
+	width: 92%;
+	border: none;
+	border-radius: 40px;
+	background-color: white;
+	height: 50px;
+	text-decoration: none;
+	font-weight: normal;
+	margin-top: 10px;
+}
+
+.sprache button:hover {
+    color: white;
+	background-color: black;
+}
+
 @media screen and (max-width: 1680px) {
     ul {
         list-style-type: none;
