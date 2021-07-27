@@ -7,6 +7,7 @@
         <meta name="editor" content="IntelliJ IDEA">
         <link rel="stylesheet" type="text/css" href="../../css/BewerbungsschreibenStyle.css">
         <link rel="stylesheet" type="text/css" href="../../css/Navigation.css">
+		<script src="../../js/heightScript.js"></script>
     </head>
     <body>
         <ul>
@@ -71,6 +72,14 @@
                 </div>
                 <img src="../../pics/unterschrift.png" alt="">
                 <div class="theText">Janne Sickert</div>
+				<script>
+					var localWriter = function() {
+						for (var i = 0; i < 15; i++) {
+							document.write("<br>")
+						}
+					}
+					main(localWriter)
+				</script>
             </div>
         </div>
     </body>
