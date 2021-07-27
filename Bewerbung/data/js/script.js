@@ -3,12 +3,12 @@ const URLS = {
     abi: ROOT + "AbiZeugnis.jpg",
     j1: ROOT + "Janne_Sickert_Zeugnis_J1-2.jpg",
     j2: ROOT + "Janne_Sickert_Zeugnis_J2-1.jpg",
-	j3: ROOT + "Janne_Sickert_Zeugnis_J2-2.jpg"
+	j3: ROOT + "Janne_Sickert_Zeugnis_J2-2.png"
 }
 
-var aWriteFunction = null;
-var setFunction = null;
-var getFunction = null;
+var aWriteFunction = null
+var setFunction = null
+var getFunction = null
 const HTML_ID = "bildZeugnis"
 const STORAGE_ID = "66"
 
