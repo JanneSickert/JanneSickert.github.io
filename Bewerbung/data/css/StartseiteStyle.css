@@ -43,3 +43,9 @@ body {
         font-size: 85px;
     }
 }
+
+@media screen and (max-height: 900px) {
+	#headText, #bodyText {
+		padding-top: 2%;
+	}
+}

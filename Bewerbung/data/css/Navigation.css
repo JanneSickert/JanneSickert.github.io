@@ -117,3 +117,9 @@ li a:hover {
         color: black;
     }
 }
+
+@media screen and (max-height: 580px) {
+	.sprache {
+		margin-top: 1%;
+	}
+}
