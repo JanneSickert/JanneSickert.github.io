@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>letter of application</title>
+        <meta name="author" content="Janne Sickert">
+        <meta name="editor" content="IntelliJ IDEA">
+        <link rel="stylesheet" type="text/css" href="../../css/BewerbungsschreibenStyle.css">
+        <link rel="stylesheet" type="text/css" href="../../css/Navigation.css">
+		<script src="../../js/heightScript.js"></script>
+    </head>
+    <body>
+        <ul>
+            <li><a href="Startseite.html">Home page</a></li>
+            <li><a class="current" href="Bewerbungsschreiben.html">Letter of application</a></li>
+            <li><a href="Lebenslauf.html">Tabular CV</a></li>
+            <li><a href="Zeugnisse.html">Testimonies</a></li>
+            <li><a href="Lehrinhalte.html">Learned things</a></li>
+            <li><a href="https://github.com/JanneSickert?tab=repositories">My GitHub</a></li>
+			<div class="sprache">
+				<div class="spracheHeadline">languages</div>
+				<button onclick="window.location.href = '../deutsch/Bewerbungsschreiben.html';" class="deutsch">German</button>
+				<button onclick="window.location.href = '../english/Bewerbungsschreiben.html';" class="english">English</button>
+			</div>
+        </ul>
+        <div class="mainDiv">
+            <div class="dinA4">
+                <div class="headText">
+                    Janne Sickert<br>
+                    Rüttenenweg 63<br>
+                    4313 Möhlin (Switzerland)<br>
+                    janne.sickert.bewerbung@gmail.com<br>
+                    0162 6917806<br>
+                </div>
+                <div class="datum">
+                    24. Juli 2021<br>
+                </div>
+                <div class="headLine">
+                    Application for an apprenticeship from 01.09.2021
+                </div>
+                <div class="theText">
+                    Dear Ladies and Gentlemen,
+                    <br><br>
+					a cupple of days ago I have got my graduation at the Information technology high school and got there the "allgemeine Hochschulreife".
+					The most experience I have in the Java programming language. There I know many ways to structure code. object-oriented with classes, abstract classes and interfaces as well as static.
+					In addition I know how to use Annotationen. I know how to use a Docker for SQL-Light databases and a parser for XML-Files.
+					Of course, I can also program the databases myself. My knowledge of graphical interfaces and animations in Java are also good.
+					I also know packages for CRUD applications and have basic knowledge of app development with Android Studio.
+					For the backend of servers I worked with the Spring Framework as part of an open source project. I am also familiar with the Gradle build system.
+                    <br><br>
+                    For the frontend I know JavaScript, HTML and CSS.
+					JavaScript is my second most used language after Java.
+					I also know Node.js. My second script language is Python.
+					Furthermore, I have basic knowledge of C ++, among other things, I know the libraries for file operations and the principle of header files and classes.
+                    <br><br>
+                    Now to what I learned at the technical high school. All in all, I had an average of 6 hours a week of computer science lessons over the 3 years.
+					This can be divided into 5 areas: microcontrollers, UML diagrams, databases, operating systems and network technology.
+					For UML we learned class diagrams, sequence diagrams and state diagrams as a better alternative to JavaDoc.
+                    Our database language was SQL-Light.
+					In operating systems we have learned how data are structured in Windows and Linux and what threads are. At home I learned to implement them in Java.
+					In network technology we learned something about the layers in which the Internet is built up.
+					Our microcontroller was the 8051 that I programmed with Assembly and C in the Keil IDE.
+					I also worked a bit with the Assembly programming language for DOS.
+					I'm also familiar with the Oracle VM VirtualBox and have installed there a Linux-Debian distribution so I can handle with Linux.
+                    <br><br>
+                    You can find sample code for most of the above skills on GitHub. The administration of my repositories do I with Git Bash.
+                    I can also work with the Windows console and through this I can write batch files.
+                    <br><br>
+                    Since I learned most of the abovementioned skills independently over the Internet, I believe I can say of myself that I can learn well on my own.
+					Thank you for taking the time to read my application.
+					I would be delighted to have the opportunity to introduce myself to you personally or by Skype.
+                    <br><br>
+                    With best wishes
+                </div>
+                <img src="../../pics/unterschrift.png" alt="">
+                <div class="theText">Janne Sickert</div>
+				<script>
+					var localWriter = function() {
+						for (var i = 0; i < 15; i++) {
+							document.write("<br>")
+						}
+					}
+					main(localWriter)
+				</script>
+            </div>
+        </div>
+    </body>
+</html>
