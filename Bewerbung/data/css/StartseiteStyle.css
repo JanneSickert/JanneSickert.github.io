@@ -48,4 +48,9 @@ body {
 	#headText, #bodyText {
 		padding-top: 2%;
 	}
+
+	#headText {
+		font-size: 75px;
+		font-weight: bolder;
+	}
 }
