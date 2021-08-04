@@ -1,4 +1,82 @@
-button {
-    width: 100%;
-    font-size: 40pt;
+body {
+	background-image: url("jpg/sp.jpg");
+}
+
+#mainContainer {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+img {
+	--myBorderRadius: 50%;
+	--mySize: 235px;
+   -moz-border-radius: var(--myBorderRadius);
+   -webkit-border-radius: var(--myBorderRadius);
+   border-radius: var(--myBorderRadius);
+   height: var(--mySize);
+   width: var(--mySize);
+}
+
+#text1, #text2, #text3 {
+	color: #FFFFFF;
+	font-size: 35pt;
+	margin-top: -140px;
+	margin-left: 10px;
+}
+
+#container1 {
+	margin-left: 80%;
+	margin-right: 20%;
+	margin-top: 8%;
+}
+
+#container2 {
+	margin-top: 10%;
+	margin-left: 40%;
+	margin-right: 60%;
+}
+
+#container3 {
+	margin-top: 2%;
+	margin-left: 70%;
+	margin-right: 30%;
+}
+
+#container1:hover, #container2:hover, #container3:hover {
+	-webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+@media screen and (max-width: 1800px) {
+	#container1 {
+		margin-left: 40%;
+		margin-right: 60%;
+		margin-top: 8%;
+	}
+
+	#container2 {
+		margin-top: 10%;
+		margin-left: 10%;
+		margin-right: 90%;
+	}
+
+	#container3 {
+		margin-top: 2%;
+		margin-left: 35%;
+		margin-right: 65%;
+	}
+}
+
+@media screen and (max-width: 1000px) {/**235+20**/
+	#container1, #container2, #container3 {
+		margin-left: 1%;
+		margin-right: 99%;
+		margin-top: 90px;
+	}
 }
