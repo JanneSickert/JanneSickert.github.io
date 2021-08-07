@@ -35,3 +35,36 @@ body {
 	text-align: justify;
 	letter-spacing: 1.5;
 }
+
+@media screen and (max-width: 1750px) {
+	#headLine {
+		font-size: 42pt;
+	}
+}
+
+@media screen and (max-width: 1680px) {
+	#papier {
+		margin-left: 45%;
+	}
+}
+
+@media screen and (max-width: 1450px) {
+	#headLine {
+		font-size: 25pt;
+	}
+}
+
+@media screen and (max-width: 895px) {
+	#headLine {
+		font-size: 18pt;
+	}
+}
+
+@media screen and (max-width: 770px) {
+	#papier {
+		margin-left: 1%;
+		margin-top: 50%;
+		width: 98%;
+		height: 100%;
+	}
+}
