@@ -1,0 +1,27 @@
+#mainContainer {
+	--myMargin: 20%;
+	margin-left: var(--myMargin);
+	margin-right: var(--myMargin);
+}
+
+#text-Desktopanwendungen, #text-Webentwicklung, #text-DataScience, #text-Mikrocontroller, #text-Datenbanken, #text-Spielentwicklung {
+	text-align: justify;
+	font-size: 16pt;
+}
+
+h1 {
+	font-size: 35pt;
+	color: darkblue;
+}
+
+h2 {
+	font-size: 25pt;
+	color: darkblue;
+}
+
+.line {
+    background-color: darkblue;
+    height: 5px;
+    width: 100%;
+	margin-top: 20px;
+}
