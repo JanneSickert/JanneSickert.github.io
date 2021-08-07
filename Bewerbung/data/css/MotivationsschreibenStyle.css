@@ -1,0 +1,37 @@
+body {
+	background-image: url("../pics/sky.jpg");
+}
+
+#papier {
+	margin-left: 36%;
+    background-color: white;
+    width: 37%;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+#headLine {
+	margin-top: 50px;
+	width: 100%;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 50pt;
+}
+
+#Line {
+	margin-top: 50px;
+	margin-left: 5%;
+	height: 5px;
+	width: 90%;
+	background-color: black;
+}
+
+#Text {
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 25px;
+	font-size: 14pt;
+	text-align: justify;
+	letter-spacing: 1.5;
+}
