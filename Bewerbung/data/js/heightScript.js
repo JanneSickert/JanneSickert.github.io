@@ -1,34 +1,18 @@
-var wasWrote = false
-const START_UNDER = 770 // write <br>'s under 770px width.
-var nrOfBr
-var theDocument
+var writer = null
+const START_UNDER = 770
 
-var writeBr = function() {
-	for (var i = 0; i < nrOfBr; i++) {
-		theDocument.write("<br>")
+function loadData() {
+	var myWidth = window.innerWidth
+	writeBr(myWidth)
+}
+
+function writeBr(myHeight) {
+	if (myHeight < START_UNDER) {
+		writer()
 	}
 }
 
-function check() {
-	setTimeout(function() {
-		var myWidth = window.innerWidth
-		if (myWidth < START_UNDER) {
-			if (wasWrote == false) {
-				writeBr()
-				wasWrote = true
-			}
-		} else {
-			if (wasWrote) {
-				location.reload()
-				wasWrote = false
-			}
-		}
-		check()
-	}, 50)
-}
-
-function main(pDocument, nr) {
-	theDocument = pDocument
-	nrOfBr = nr
-	check()
+function main(pWriter) {
+	writer = pWriter
+	loadData()
 }
