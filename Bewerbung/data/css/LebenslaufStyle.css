@@ -45,14 +45,48 @@ table {
 #strich3 {
     margin-top: 98px;
 }
+
 .tableSchule, .TabelleSprachkenntnisse {
     width: 250px;
+}
+
+#ich {
+	width: 200px;
+	margin-left: 600px;
+	margin-top: -130px;
+	--myBorderRadius: 50%;
+   -moz-border-radius: var(--myBorderRadius);
+   -webkit-border-radius: var(--myBorderRadius);
+   border-radius: var(--myBorderRadius);
 }
 
 @media screen and (max-width: 1680px) {
     #LebenslaufSeite {
         margin-left: 25%;
     }
+}
+
+@media screen and (max-width: 1113px) {
+	#ich {
+		margin-left: 500px;
+	}
+	
+	#headLine {
+		font-size: 73pt;
+	}
+}
+
+@media screen and (max-width: 964px) {
+	#ich {
+		margin-left: 50px;
+		margin-top: 0;
+	}
+	
+	.LocalHeadline {
+		padding-left: 35%;
+		font-size: 20pt;
+		margin-top: -22px;
+	}
 }
 
 @media screen and (max-width: 770px) {
@@ -68,4 +102,9 @@ table {
     #headLine {
         font-size: 50pt;
     }
+	
+	#ich {
+		margin-left: 400px;
+		margin-top: -125px;
+	}
 }
