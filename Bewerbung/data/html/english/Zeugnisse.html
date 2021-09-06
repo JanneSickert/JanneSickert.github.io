@@ -24,6 +24,24 @@
 				<button onclick="window.location.href = '../english/Zeugnisse.html';" class="english">English</button>
 			</div>
         </ul>
+        <div id="mbmcookie">
+            <a
+                onClick = "yesCookies(document);" 
+                class="button">
+                Accept
+            </a>
+            <a
+                onClick = "noCookies(document, 'en');" 
+                class="button">
+                Reject
+            </a>
+            <p class="cookiemessage">
+                This site uses cookies. By using this website you agree that cookies are set.
+                <a href="../../js/script.js">
+                    learn more
+                </a>
+            </p>
+        </div>
         <div id="ZeugnisseMainDiv">
             <button id="abiButton" onclick="cabi()">High school graduation</button>
             <button id="j1Button" onclick="cj1()">graduation J1-2</button>
@@ -39,7 +57,11 @@
                 function gsf(id) {
                     return (localStorage.getItem(id))
                 }
-                main(write, ssf, gsf)
+                function clearSpace() {
+                    localStorage.clear()
+                }
+                main(write, ssf, gsf, clearSpace)
+                checkSetCookies(document)
             </script>
         </div>
     </body>
