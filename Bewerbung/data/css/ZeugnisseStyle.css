@@ -10,6 +10,43 @@ body {
     margin-left: 12%;
 }
 
+/* ask for cookies */
+#mbmcookie {
+    position: fixed;
+    bottom: 0;
+    left: 12%;
+    right: 0;
+    background: #eee;
+    padding: 20px;
+    font-size: 14px;
+    font-family: verdana;
+}
+
+#mbmcookie a.button {
+    cursor: pointer;
+    background: #e21717;
+    padding: 8px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    float: right;
+}
+
+#mbmcookie a.button {
+    color: #EEE;
+}
+
+#mbmcookie a.button:hover {
+    background-color: #21da58;
+}
+
+#mbmcookie p.cookiemessage {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+/*---------------- */
+
 button {
     position: absolute;
     background-color: darkblue;
@@ -87,6 +124,10 @@ button {
 	#j3Button {
 		margin-left: 36%;
 	}
+
+    #mbmcookie {
+        left: 25%;
+    }
 }
 
 @media screen and (max-width: 1450px) {
@@ -149,4 +190,10 @@ button {
 		margin-top: 25%;
 		width: 98%;
 	}
+
+    #mbmcookie {
+        left: 0;
+        width: 100%;
+        bottom: 0;
+    }
 }
