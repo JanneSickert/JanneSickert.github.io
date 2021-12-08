@@ -22,7 +22,6 @@ const URLS = {
 var aWriteFunction = null
 var setFunction = null
 var getFunction = null
-var deleteFunction = null
 const HTML_ID = "bildZeugnis"
 const STORAGE_ID = "66"
 const ACCEPT_COOKIE = "65"
@@ -36,23 +35,39 @@ function reload() {
 }
 
 function cabi() {
-    setFunction(STORAGE_ID, "abi")
-    reload()
+    if (getFunction(ACCEPT_COOKIE) === "1") {
+        setFunction(STORAGE_ID, "abi")
+        reload()
+    } else {
+        alert("Links cannot be used with rejected cookies.")
+    }
 }
 
 function cj1() {
-    setFunction(STORAGE_ID, "j1")
-    reload()
+    if (getFunction(ACCEPT_COOKIE) === "1") {
+        setFunction(STORAGE_ID, "j1")
+        reload()
+    } else {
+        alert("Links cannot be used with rejected cookies.")
+    }
 }
 
 function cj2() {
-    setFunction(STORAGE_ID, "j2")
-    reload()
+    if (getFunction(ACCEPT_COOKIE) === "1") {
+        setFunction(STORAGE_ID, "j2")
+        reload()
+    } else {
+        alert("Links cannot be used with rejected cookies.")
+    }
 }
 
 function cj3() {
-	setFunction(STORAGE_ID, "j3")
-    reload()
+    if (getFunction(ACCEPT_COOKIE) === "1") {
+        setFunction(STORAGE_ID, "j3")
+        reload()
+    } else {
+        alert("Links cannot be used with rejected cookies.")
+    }
 }
 
 function abi() {
@@ -75,29 +90,14 @@ var noCookies = function(pDocument, language) {
     const PIC_PATH = "/Bewerbung/data/pics/"
     var message = {
         de: "Wenn sie die Cookies ablehnen können sie die restlichen"
-         + " Zeugnisse im Verzeichniss " + PIC_PATH + " einsehen. "
-         + "Schreibe ja um alle Cookies zu löschen.",
+         + " Zeugnisse im Verzeichniss " + PIC_PATH + " einsehen. ",
         en: "If you reject the cookies you can see the remaining "
-         + "certificates in the directory " + PIC_PATH + " Write yes to delete all cookies."
+         + "certificates in the directory " + PIC_PATH
     }
     if (language === "de") {
-        var res = prompt(message.de)
-        if (res === "ja") {
-            deleteFunction()
-            alert("Alle Cookies wurden gelöscht.");
-        } else {
-            setFunction(ACCEPT_COOKIE, "1")
-            alert("Alle Cookies wurden beibehalten.")
-        }
+        alert(message.de)
     } else {
-        var res = prompt(message.en)
-        if (res === "yes") {
-            deleteFunction()
-            alert("All cookies have been deleted.");
-        } else {
-            setFunction(ACCEPT_COOKIE, "1")
-            alert("All cookies were retained.")
-        }
+        alert(message.en)
     }
     pDocument.getElementById('mbmcookie').style.display = 'none';
 }
@@ -107,11 +107,10 @@ var yesCookies = function(pDocument) {
     pDocument.getElementById('mbmcookie').style.display = 'none';
 }
 
-function main(writeFunction, sf, gf, df) {
+function main(writeFunction, sf, gf) {
     aWriteFunction = writeFunction;
     setFunction = sf
     getFunction = gf
-    deleteFunction = df
     var value = getFunction(STORAGE_ID)
     if (value === "j1") {
         j1()
